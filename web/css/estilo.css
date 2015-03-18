@@ -11,7 +11,7 @@ body{
 .header{
 	background-color: #2E2E2E;
 	border-bottom: solid 3px #66AD23;
-	height: 61px;
+	height: 70px;
 	margin: 0px;
 	width: 100%;
 }
@@ -36,9 +36,9 @@ body{
 
 .menu{
 	float: right;
-  	/* margin: 0 auto; */
-  	width: 60%;
   	height: 90%;
+  	margin-top: 5px;
+  	width: 60%;
 }
 
 .cont_menu{
@@ -110,10 +110,11 @@ body{
 .contenido_historia{
 	float: left;
 	width: 50%;
-	height: 580px;
-	padding-top: 140px;
+	height: 460px;
+	padding-top: 170px;
 }
 
+/*Botones estilos*/
 .boton_a{
 	background-image: url("../img/btn_a.png");
 	background-position: top;
@@ -126,6 +127,34 @@ body{
 .boton_a:hover{
 	background-position:bottom;
 }
+
+.boton_b{
+	background-image: url("../img/btn_b.png");
+	background-position: top;
+	border: none;
+	height: 68px;
+	margin: 0 160px 32px;
+	width: 296px;
+}
+
+.boton_b:hover{
+	background-position:bottom;
+}
+
+.boton_c{
+	background-image: url("../img/btn_c.png");
+	background-position: top;
+	border: none;
+	height: 68px;
+	margin: 0 160px 32px;
+	width: 296px;
+}
+
+.boton_c:hover{
+	background-position:bottom;
+}
+
+/*Fin de estilos botones hover*/
 
 .icon{
 	width: 10%;
@@ -147,7 +176,7 @@ body{
 	float: right;
 	width: 50%;
 	height: 580px;
-	padding-top: 140px;
+	padding-top: 77px;
 }
 
 .imgs_cont_historia{
@@ -165,4 +194,77 @@ body{
 .img_historia_b{
 	margin: 0px;
 
+}
+
+/*Seccion cocina imagen grande*/
+.cocina{
+	/*clear: both;*/
+	width: 1280px;
+  	height: 100%;
+  	margin: 0px auto;
+}
+
+/*Seccion razas*/
+.razas{
+  	width: 1280px;
+  	height: 585px;
+  	margin: 0px auto;
+}
+
+.img_razas{
+	float: left;
+  	width: 50%;
+  	height: 100%;
+  	padding-top: 77px;
+}
+
+.contenido_razas{
+	float: right;
+  	width: 50%;
+  	height: 460px;
+  	padding-top: 170px;
+}
+
+/*Floracion imagen grande*/
+.floracion{
+	width: 1280px;
+  	height: 100%;
+  	margin: 0px auto;
+}
+
+.consejos{
+  	width: 1280px;
+  	height: 585px;
+  	margin: 0px auto;
+}
+
+.imgs_cont_consejos{
+	float: left;
+  	width: 85%;
+  	margin: 0 auto;
+  	list-style: none;
+}
+
+.imgs_consejos{
+	float: right;
+  width: 50%;
+  height: 580px;
+  padding-top: 77px;
+}
+
+.imgs_consejos_a{
+  float: right;
+  margin: 0px 24px 20px 0px;
+}
+
+.img_consejos_b{
+	float: right;
+  	margin: 0px;
+}
+
+.contenido_consejos{
+	float: left;
+  	width: 50%;
+  	height: 460px;
+  	padding-top: 170px;
 }
