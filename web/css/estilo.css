@@ -218,6 +218,10 @@ body{
   	padding-top: 77px;
 }
 
+.img_razas_a{
+	margin: 0px 80px;
+}
+
 .contenido_razas{
 	float: right;
   	width: 50%;
@@ -268,3 +272,103 @@ body{
   	height: 460px;
   	padding-top: 170px;
 }
+
+/*Inicio de Footer*/
+.footer{
+	float: left;
+	background-color: #1E1E1E;
+	border-bottom: solid 60px #66AD23;
+  	height: 340px;
+  	margin: 0px;
+  	width: 100%;
+}
+
+.cont_direccion{
+	width: 1280px;
+ 	height: 110px;
+  	margin: 0px auto;
+}
+
+.estilo_a{
+	color: #66AC21;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.estilo_p_a{
+	color: #FEFEFE;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*Contenedor de datos de contacto redes y llamanos*/
+.cont_contacto_big{
+	width: 1280px;
+  	height: 200px;
+  	margin: 0px auto;
+}
+
+.cont_contacto_a{
+	float: left;
+  	width: 50%;
+  	height: 200px;
+}
+
+.lista_redes{
+	display: flex;
+ 	list-style: none;
+  	width: 315px;
+ 	margin: 0 auto;
+}
+
+.redes1{
+	float: left;
+	margin: 0px 32px 0px 0px; 
+}
+
+.cont_conatcto_b{
+	float: right;
+  	width: 50%;
+  	height: 200px;
+}
+
+/*texto footer final fondo verde*/
+.footer_verde{
+	width: 1280px;
+  	height: 50px;
+  	margin: 0px auto;
+}
+
+.copyright{
+	float: left;
+  	color: #FEFEFE;
+  	font-family: 'Open Sans', sans-serif;
+  	font-size: 14px;
+  	font-weight: normal;
+  	margin-left: 181px;
+  	margin-top: 20px;
+}
+
+.autor{
+	float: right;
+	color: #FEFEFE;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	margin-right: 181px;
+  	margin-top: 20px;
+}
+
+.resaltado_negro{
+	color: #1E1E1E;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
