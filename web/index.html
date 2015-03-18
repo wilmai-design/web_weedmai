@@ -5,28 +5,37 @@
 	<title>WeedMai web</title>
 	<link rel="stylesheet" href="css/estilo.css">
 	<link rel="stylesheet" href="normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-2.1.3.min"></script>
 </head>
 <body>
+	<!--identificador de ancla-->
+	<div id="irarriba"><a href="javasscript:void(0);"><span></span></a></div>
+	<div id="top"><a href="javasscript:void(0);"><span></span></a></div>
 	<header class="header">
-		<figure class="logo">
-			<img src="img/logo_a.png" alt="" title="Logo WEEDMAI">
-		</figure>
-		<nav class="menu">
-			<ul class="cont_menu">
-				<li class=""><a class="activo_menu" href="">HOME</a></li>
-				<li class=""><a class="menu_links" href="">HISTORIA</a></li>
-				<li class=""><a class="menu_links" href="">RECETAS</a></li>
-				<li class=""><a class="menu_links" href="">RAZAS</a></li>
-				<li class=""><a class="menu_links" href="">CONTACTO</a></li>
-			</ul>
-		</nav>
+		<div class="contenedor_a">
+			<figure class="logo">
+				<img src="img/logo_a.png" alt="" title="Logo WEEDMAI">
+			</figure>
+			<nav class="menu">
+				<ul class="cont_menu">
+					<li class="menu_lista"><a class="activo_menu" href="#">HOME</a></li>
+					<li class="menu_lista"><a class="menu_links" href="#">HISTORIA</a></li>
+					<li class="menu_lista"><a class="menu_links" href="#">RECETAS</a></li>
+					<li class="menu_lista"><a class="menu_links" href="#">RAZAS</a></li>
+					<li class="menu_lista"><a class="menu_links" href="#">CONTACTO</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<!-- Seccion de Home e Historia-->
+	<div id="home"><a href="javasscript:void(0);"><span></span></a></div>
 	<section class="home">
 		<figure class="imagen_a">
 			<img src="img/img_a.jpg" alt="">
 		</figure>
 	</section>
+	<div id="historia"><a href="javasscript:void(0);"><span></span></a></div>
 	<section class="historia">
 		<article class="contenido_historia">
 			<a href="#"><button class="boton_a" title="Historia">HISTORIA</button><a/>
@@ -59,12 +68,13 @@
 		</article>
 	</section>
 	<!-- Seccion de Cocina y Top razas-->
+	<div id="cocina"><a href="javasscript:void(0);"><span></span></a></div>
 	<section class="cocina">
 		<figure class="imagen_a">
 			<img src="img/img_b_big.jpg" alt="">
 		</figure>
 	</section>
-
+	<div id="razas"><a href="javasscript:void(0);"><span></span></a></div>
 	<section class="razas">
 		<article class="contenido_razas">
 			<a href="#"><button class="boton_a" title="Historia">TOP RAZAS</button><a/>
@@ -78,13 +88,14 @@
 			</figure>
 		</article>
 	</section>
-
 	<!-- Seccion de Floracion y consejos-->
+	<div id="floracion"><a href="javasscript:void(0);"><span></span></a></div>
 	<section class="floracion">
 		<figure class="imagen_a">
 			<img src="img/img_c_big.jpg" alt="">
 		</figure>
 	</section>
+	<div id="consejos"><a href="javasscript:void(0);"><span></span></a></div>
 	<section class="consejos">
 		<article class="contenido_consejos">
 			<a href="#"><button class="boton_a" title="Historia">CONSEJOS</button><a/>

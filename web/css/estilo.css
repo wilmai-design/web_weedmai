@@ -1,0 +1,93 @@
+body{
+	color:#66AD22;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	width: 100%;
+	margin:0px auto;
+	background-color: #ddd;
+
+}
+
+.header{
+	background-color: #2E2E2E;
+	border-bottom: solid 3px #66AD23;
+	height: 61px;
+	margin: 0px;
+	width: 100%;
+}
+
+.contenedor_a{
+	width: 1280px;
+  	height: 60px;
+  	margin: 0px auto;
+}
+
+.logo{
+	margin: 0px;
+  	float: left;
+  	margin-left: 5%;
+}
+
+.menu{
+	float: right;
+  	/* margin: 0 auto; */
+  	width: 60%;
+  	height: 90%;
+}
+
+.cont_menu{
+	list-style: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.cont_menu{
+	list-style: none;
+}
+
+.menu_lista{
+	float: left;
+  	margin: 2px 81px 0px 0px;
+}
+
+.menu_links{
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.menu_links:hover{
+	color: #0D9EB9;
+	text-decoration: underline;
+}
+
+.activo_menu{
+	color: #66AE23;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.activo_menu:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+/*Imagen grande home*/
+.home{
+	background-color: #090B01;
+	height: 654px;
+	margin: 0px auto;
+	width: 100%;
+}
+
+figure.imagen_a{
+	height: 654px;
+	margin: 0px auto;
+	width: 100%;
+}
