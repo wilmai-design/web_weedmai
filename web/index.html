@@ -7,6 +7,39 @@
 	<link rel="stylesheet" href="normalize.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-2.1.3.min"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/stickyMojo.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {    
+		$('#sidebar').stickyMojo({footerID: '#footer', contentID: '#content'});
+		$('.ancla').click(function(){
+	        var link = $(this);
+	        var anchor  = link.attr('href');
+	        $('html, body').stop().animate({
+	            scrollTop: jQuery(anchor).offset().top
+	        }, 2000);
+	        return false;
+	    });
+	});
+	$(document).ready(function() {  
+		$('#irarriba').hide();
+			$(function(){
+				$(window).scroll(function(){
+					if($(this).scrollTop() > 200){
+						$('#irarriba').fadeIn();
+					}else{
+						$('#irarriba').fadeOut();
+					}
+				})
+				$('#irarriba span').click(function(){
+					$('body,html').animate({
+						scrollTop: 0
+					}, 1000);
+					return false;
+				})
+			})
+		})
+	</script>
 </head>
 <body>
 	<!--identificador de ancla-->
@@ -20,25 +53,27 @@
 				</figure>
 				<nav class="menu">
 					<ul class="cont_menu">
-						<li class="menu_lista"><a class="activo_menu" href="#">HOME</a></li>
-						<li class="menu_lista"><a class="menu_links" href="#">HISTORIA</a></li>
-						<li class="menu_lista"><a class="menu_links" href="#">RECETAS</a></li>
-						<li class="menu_lista"><a class="menu_links" href="#">RAZAS</a></li>
-						<li class="menu_lista"><a class="menu_links" href="#">CONTACTO</a></li>
+						<li class="menu_lista"><a class="activo_menu ancla" href="#home">HOME</a></li>
+						<li class="menu_lista"><a class="menu_links ancla" href="#historia">HISTORIA</a></li>
+						<li class="menu_lista"><a class="menu_links ancla" href="#cocina">RECETAS</a></li>
+						<li class="menu_lista"><a class="menu_links ancla" href="#razas">RAZAS</a></li>
+						<li class="menu_lista"><a class="menu_links ancla" href="#floracion">FLORACION</a></li>
+						<li class="menu_lista"><a class="menu_links ancla" href="#consejos">CONSEJOS</a></li>
+						<li class="menu_lista"><a class="menu_links ancla" href="#footer">CONTACTO</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<!-- Seccion de Home e Historia-->
-		<div id="home"><a href="javasscript:void(0);"><span></span></a></div>
+		<div id="home"></div>
 		<section class="home">
 				<figure class="imagen_a">
-					<img src="img/img_a.jpg" alt="">
+					<img src="img/img_a.jpg" width="1360px" height="649px" alt="">
 				</figure>
 		</section>
-	<!--identificador de ancla-->
-	<div id="historia"><a href="javasscript:void(0);"><span></span></a></div>
 		<section class="historia">
+		<!--identificador de ancla Historia-->
+		<div id="historia"></div>
 			<article class="contenido_historia">
 				<a href="#"><button class="boton_a" title="Historia"></button><a/>
 					<figure class="icon">
@@ -73,15 +108,17 @@
 			</article>
 		</section>
 	<!-- Seccion de Cocina y Top razas-->
-	<!--identificador de ancla-->
-	<div id="cocina"><a href="javasscript:void(0);"><span></span></a></div>
 		<section class="cocina">
+		<!--identificador de ancla cocina-->
+		<div id="cocina"></div>
 			<figure class="imagen_a">
 				<img src="img/img_b_big.jpg" alt="">
 			</figure>
 		</section>
 		<div id="razas"><a href="javasscript:void(0);"><span></span></a></div>
 		<section class="razas">
+		<!--identificador de ancla Razas-->
+		<div id="razas"></div>
 			<article class="img_razas">
 				<figure class="img_razas_a">
 					<img src="img/img_d_medio.jpg" alt="" title="imagen razas medio">
@@ -98,15 +135,15 @@
 			</article>
 		</section>
 	<!-- Seccion de Floracion y consejos-->
-	<!--identificador de ancla-->
-	<div id="floracion"><a href="javasscript:void(0);"><span></span></a></div>
+	<!--identificador de ancla Floracion-->
+	<div id="floracion"></div>
 		<section class="floracion">
 			<figure class="imagen_a">
 				<img src="img/img_c_big.jpg" alt="">
 			</figure>
 		</section>
-	<!--identificador de ancla-->
-	<div id="consejos"><a href="javasscript:void(0);"><span></span></a></div>
+	<!--identificador de ancla Consejos-->
+	<div id="consejos"></div>
 		<section class="consejos">
 			<article class="contenido_consejos">
 				<a href="#"><button class="boton_c" title="Historia"></button><a/>
@@ -133,7 +170,7 @@
 			</article>
 		</section>
 	<!--identificador de ancla-->
-	<div id="footer"><a href="javasscript:void(0);"><span></span></a></div>
+	<div id="footer"></div>
 		<footer class="footer">
 			<section class="cont_direccion">
 				<h2 class="estilo_a">DIRECCION</h2>

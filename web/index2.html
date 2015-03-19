@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Prueba anclas</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/stickyMojo.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {    
+	$('#sidebar').stickyMojo({footerID: '#footer', contentID: '#content'});
+	$('.ancla').click(function(){
+        var link = $(this);
+        var anchor  = link.attr('href');
+        $('html, body').stop().animate({
+            scrollTop: jQuery(anchor).offset().top
+        }, 2000);
+        return false;
+    });
+});
+</script>
+
+</head>
+<body>
+	<a class="smooth" name="inicio"></a>
+	<h1>Pagina 1</h1>
+
+	<a href="#Introduccion" class="ancla">Introduccion</a>
+
+	<a href="#Desarrollo" class="ancla">Desarrollo</a>
+	<a href="#Ideas" class="ancla">Ideas</a>
+	<a href="#fin" class="ancla">fin</a>
+
+	<div id="Introduccion">Introduccion</div>
+	<h2>Introduccion</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugit.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugit.
+	</p>
+
+	<div id="Desarrollo">Desarrollo</div>
+	<h2>Desarrollo</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugit.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugit.
+	</p>
+
+	<div id="Ideas">Ideas</div>
+	<h1 id="Introduccion">Titulo 1</h1>
+	<h2>Ideas</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugit.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugit.
+	</p>
+
+	<div id="fin">fin</div>
+	<h2>fin</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugit.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugitLorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maxime dolore ab soluta. Et itaque quibusdam totam incidunt assumenda, earum repudiandae labore commodi sit modi mollitia, laboriosam libero, quis fugit.
+	</p>
+	<a href="#inicio">inicio</a>
+</body>
+</html>
